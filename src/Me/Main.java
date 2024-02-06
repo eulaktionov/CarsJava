@@ -26,7 +26,7 @@ public class Main {
             };
 
     static Menu menu;
-    static final  String objectFile = "vechiles.dat";;
+    static final  String objectFile = "vechiles.dat";
     static List<Vechile> vechiles;
 
     public static void main(String[] args) {
@@ -154,7 +154,7 @@ public class Main {
 
     static  List<Vechile> FindByName(String name)
     {
-        List<Vechile> found = new ArrayList<Vechile>();
+        List<Vechile> found = new ArrayList();
         for(Vechile it: vechiles)
         {
             int index = it.model.indexOf(name);
@@ -168,7 +168,7 @@ public class Main {
 
     static  List<Vechile> FindByYear(int minYear, int maxYear)
     {
-        List<Vechile> found = new ArrayList<Vechile>();
+        List<Vechile> found = new ArrayList();
         for(Vechile it: vechiles)
         {
             if (it.year >= minYear && it.year <= maxYear)
@@ -181,7 +181,7 @@ public class Main {
 
     static  List<Vechile> FindByPrice(double minPrice, double maxPrice)
     {
-        List<Vechile> found = new ArrayList<Vechile>();
+        List<Vechile> found = new ArrayList();
         for(Vechile it: vechiles)
         {
             if (it.price >= minPrice && it.price <= maxPrice)

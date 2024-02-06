@@ -94,19 +94,19 @@ public class Menu {
         return reader.nextLine();
     }
 
-    public static String editString(String call, String value){
-        String prompt = String.format("/%s/%s (Enter - left prev): ",
-                value, call);
-        System.out.print(prompt);
-        String newValue = reader.nextLine();
-        return newValue.length() == 0 ? value : newValue;
-    }
+//    public static String editString(String call, String value){
+//        String prompt = String.format("/%s/%s (Enter - left prev): ",
+//                value, call);
+//        System.out.print(prompt);
+//        String newValue = reader.nextLine();
+//        return newValue.length() == 0 ? value : newValue;
+//    }
 
-    public static int editInt(String call, int value){
-        String prompt = String.format("/%d/%s (Enter - left prev): ",
-                value, call);
-        System.out.print(prompt);
-        int newValue = tryEnterInt();
-        return newValue == Integer.MAX_VALUE ? value : newValue;
-    }
+//    public static int editInt(String call, int value){
+//        String prompt = String.format("/%d/%s (Enter - left prev): ",
+//                value, call);
+//        System.out.print(prompt);
+//        int newValue = tryEnterInt();
+//        return newValue == Integer.MAX_VALUE ? value : newValue;
+//    }
 }

@@ -2,9 +2,6 @@ package Me;
 
 import java.io.Serializable;
 
-import java.io.*;
-import java.util.*;
-
 public class Truck extends Vechile implements Serializable
 {
     //private double maxLoad;
